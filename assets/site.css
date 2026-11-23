@@ -763,10 +763,16 @@ h2 {
   transition: background-color 160ms ease, box-shadow 160ms ease;
 }
 
-.call-button:hover,
+.call-button:hover {
+  background-color: #D58C55 !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
 .call-button:focus-visible {
   background-color: #D58C55 !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, .24);
+  outline: 2px solid #D58C55;
+  outline-offset: 3px;
 }
 
 .site-header::after {
